@@ -16,6 +16,21 @@
 </head>
 
 <body>
+
+  <!-- cart -->
+
+  <div class="cart-btn">
+    <div class="action d-flex align-items-center order-2 order-lg-3">
+      <div class="cart position-relative" data-bs-toggle="modal" data-bs-target="#foodmodal">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span
+          class="cart-item-count position-absolute d-flex justify-content-center align-items-center rounded-circle text-white">10</span>
+      </div>
+      <div class=" menu-toggle" id="menu-toggle">
+        <span></span>
+      </div>
+    </div>
+  </div>
   <!-- header area start -->
 
   <header class="header">
@@ -24,7 +39,7 @@
         <div class="logo order-1 order-lg-1">
           <a href="#"><img src="asset/images/image6.png" alt="logo"></a>
         </div>
-        <div class="list order-3 order-lg-2" id="menu-list">
+        <div class=" list order-3 order-lg-2" id="menu-list">
           <ul class="d-flex mb-0">
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
@@ -36,9 +51,9 @@
           <div class="cart position-relative" data-bs-toggle="modal" data-bs-target="#foodmodal">
             <i class="fa-solid fa-cart-shopping"></i>
             <span
-              class="position-absolute d-flex justify-content-center align-items-center rounded-circle text-white">10</span>
+              class="cart-item-count position-absolute d-flex justify-content-center align-items-center rounded-circle text-white">10</span>
           </div>
-          <div class="menu-toggle" id="menu-toggle">
+          <div class=" menu-toggle" id="menu-toggle">
             <span></span>
           </div>
         </div>
@@ -122,16 +137,16 @@
         <h2>Our Specials Menu</h2>
       </div>
       <div class="menu d-flex flex-wrap justify-content-center mb-4">
-        <ul class="d-flex flex-wrap justify-content-center">
-          <li><a href="#">main dishes</a></li>
+        <ul class="d-flex flex-wrap justify-content-center" id="menu-items">
+          <!-- <li><a href="#">main dishes</a></li>
           <li><a href="#">Desserts</a></li>
           <li><a href="#">Sea Food</a></li>
           <li><a href="#">Beverage</a></li>
-          <li><a href="#">Set menu</a></li>
+          <li><a href="#">Set menu</a></li> -->
         </ul>
       </div>
-      <div class="row">
-        <div class="col-lg-4 mb-4 col-md-6">
+      <div class="row" id="food-area">
+        <!-- <div class="col-lg-4 mb-4 col-md-6">
           <div class="food-cart-item">
             <div class="img position-relative">
               <img class="img-fluid w-100" src="asset/images/image8.png" alt="img">
@@ -292,7 +307,7 @@
               <span>Add to cart</span>
             </a>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
   </section>
@@ -512,137 +527,16 @@
                 <th scope="col">Action</th>
               </tr>
             </thead>
-            <tbody>
-              <tr>
-                <td>
-                  <img src="asset/images/image11.png" alt="">
-                </td>
-                <td>
-                  <span class="title">Braised Chicken Legs</span>
-                </td>
-                <td>
-                  <span class="price">$12.00</span>
-                </td>
-                <td>
-                  <div class="quantity-area d-flex align-items-center">
-                    <span class="quantity d-block mr-2">1</span>
-                    <div class="plus-minus">
-                      <ul class="d-flex list-unstyled m-0">
-                        <li class="d-flex justify-content-center align-items-center"><i class="fa-solid fa-minus"></i>
-                        </li>
-                        <li class="d-flex justify-content-center align-items-center"><i class="fa-solid fa-plus"></i>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
+            <tbody id="cart-item-table">
+              <!-- kheep empty -->
 
-                </td>
-                <td>
-                  <span class="total">$12</span>
-                </td>
-                <td>
-                  <span class="action"><i class="fa-solid fa-trash-can"></i></span>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <img src="asset/images/image11.png" alt="">
-                </td>
-                <td>
-                  <span class="title">Braised Chicken Legs</span>
-                </td>
-                <td>
-                  <span class="price">$12.00</span>
-                </td>
-                <td>
-                  <div class="quantity-area d-flex align-items-center">
-                    <span class="quantity d-block mr-2">1</span>
-                    <div class="plus-minus">
-                      <ul class="d-flex list-unstyled m-0">
-                        <li class="d-flex justify-content-center align-items-center"><i class="fa-solid fa-minus"></i>
-                        </li>
-                        <li class="d-flex justify-content-center align-items-center"><i class="fa-solid fa-plus"></i>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
 
-                </td>
-                <td>
-                  <span class="total">$12</span>
-                </td>
-                <td>
-                  <span class="action"><i class="fa-solid fa-trash-can"></i></span>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <img src="asset/images/image11.png" alt="">
-                </td>
-                <td>
-                  <span class="title">Braised Chicken Legs</span>
-                </td>
-                <td>
-                  <span class="price">$12.00</span>
-                </td>
-                <td>
-                  <div class="quantity-area d-flex align-items-center">
-                    <span class="quantity d-block mr-2">1</span>
-                    <div class="plus-minus">
-                      <ul class="d-flex list-unstyled m-0">
-                        <li class="d-flex justify-content-center align-items-center"><i class="fa-solid fa-minus"></i>
-                        </li>
-                        <li class="d-flex justify-content-center align-items-center"><i class="fa-solid fa-plus"></i>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-
-                </td>
-                <td>
-                  <span class="total">$12</span>
-                </td>
-                <td>
-                  <span class="action"><i class="fa-solid fa-trash-can"></i></span>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <img src="asset/images/image11.png" alt="">
-                </td>
-                <td>
-                  <span class="title">Braised Chicken Legs</span>
-                </td>
-                <td>
-                  <span class="price">$12.00</span>
-                </td>
-                <td>
-                  <div class="quantity-area d-flex align-items-center">
-                    <span class="quantity d-block mr-2">1</span>
-                    <div class="plus-minus">
-                      <ul class="d-flex list-unstyled m-0">
-                        <li class="d-flex justify-content-center align-items-center"><i class="fa-solid fa-minus"></i>
-                        </li>
-                        <li class="d-flex justify-content-center align-items-center"><i class="fa-solid fa-plus"></i>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-
-                </td>
-                <td>
-                  <span class="total">$12</span>
-                </td>
-                <td>
-                  <span class="action"><i class="fa-solid fa-trash-can"></i></span>
-                </td>
-              </tr>
             </tbody>
           </table>
         </div>
 
         <div class="total-count">
-          <strong class="h2 d-block text-end text-dark">Total Amount: $27.00</strong>
+          <strong id="total-count-element" class="h2 d-block text-end text-dark">Total Amount: $27.00</strong>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
